@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="98" id="KGk-i7-Jjw" customClass="WPFriendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rafael Lopez " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cn2-t5-nsN">
+                        <rect key="frame" x="26" y="8" width="286" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="V6V-hV-vCT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rafael_lopez@ucol.mx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKJ-sZ-rl7">
+                        <rect key="frame" x="26" y="37" width="286" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="KWH-hv-K3Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3121032965" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajj-gF-osY">
+                        <rect key="frame" x="26" y="66" width="286" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1Oi-E6-pxL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Cn2-t5-nsN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="3po-M1-BzJ"/>
+                    <constraint firstItem="BKJ-sZ-rl7" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="4D2-TS-FB7"/>
+                    <constraint firstItem="Ajj-gF-osY" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="N3t-SX-g1d"/>
+                    <constraint firstItem="BKJ-sZ-rl7" firstAttribute="top" secondItem="Cn2-t5-nsN" secondAttribute="bottom" constant="8" id="Q0z-7l-YmU"/>
+                    <constraint firstItem="Ajj-gF-osY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="18" id="S7r-hX-sti"/>
+                    <constraint firstItem="Cn2-t5-nsN" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Syx-2M-Z78"/>
+                    <constraint firstItem="Cn2-t5-nsN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="18" id="fDi-gQ-LXm"/>
+                    <constraint firstItem="BKJ-sZ-rl7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="18" id="gYm-1I-pMh"/>
+                    <constraint firstItem="Ajj-gF-osY" firstAttribute="top" secondItem="BKJ-sZ-rl7" secondAttribute="bottom" constant="8" id="yCC-63-21e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblEmailUser" destination="BKJ-sZ-rl7" id="sfe-H7-ywW"/>
+                <outlet property="lblNameUser" destination="Cn2-t5-nsN" id="Hvd-ki-BKK"/>
+                <outlet property="lblPhoneUser" destination="Ajj-gF-osY" id="lfL-kQ-gtP"/>
+            </connections>
+            <point key="canvasLocation" x="575" y="535"/>
+        </tableViewCell>
+    </objects>
+</document>

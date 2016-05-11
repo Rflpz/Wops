@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WPTrackController">
+            <connections>
+                <outlet property="map" destination="TNE-bj-8w8" id="PEM-gw-Kbm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TNE-bj-8w8">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="06G-36-4IP"/>
+                    </connections>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BS9-20-cNK">
+                    <rect key="frame" x="8" y="8" width="57" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="57" id="Ija-2g-Si4"/>
+                        <constraint firstAttribute="height" constant="57" id="jb7-Ii-ljR"/>
+                    </constraints>
+                    <state key="normal" image="alarm_wops.png">
+                        <attributedString key="attributedTitle"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QSJ-ij-I1Q">
+                    <rect key="frame" x="8" y="476" width="57" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="57" id="4Mf-5O-GTh"/>
+                        <constraint firstAttribute="height" constant="57" id="r0k-Rf-4Rf"/>
+                    </constraints>
+                    <state key="normal" image="call_wops.png">
+                        <attributedString key="attributedTitle"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9PW-bc-hWX">
+                    <rect key="frame" x="255" y="476" width="57" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="57" id="3A3-is-17W"/>
+                        <constraint firstAttribute="height" constant="57" id="Wgo-dd-Odo"/>
+                    </constraints>
+                    <state key="normal" image="done_wops.png">
+                        <attributedString key="attributedTitle"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u6i-Bp-O1r">
+                    <rect key="frame" x="132" y="476" width="57" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="kyf-c7-N9Z"/>
+                        <constraint firstAttribute="width" constant="57" id="rEL-Yd-rRv"/>
+                    </constraints>
+                    <state key="normal" image="play_wops.png">
+                        <attributedString key="attributedTitle"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BS9-20-cNK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="3WV-7o-YkH"/>
+                <constraint firstItem="u6i-Bp-O1r" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4ey-t7-r9a"/>
+                <constraint firstAttribute="trailing" secondItem="TNE-bj-8w8" secondAttribute="trailing" id="Lde-Oo-Wic"/>
+                <constraint firstAttribute="bottom" secondItem="QSJ-ij-I1Q" secondAttribute="bottom" constant="35" id="Yki-IS-3mZ"/>
+                <constraint firstAttribute="bottom" secondItem="9PW-bc-hWX" secondAttribute="bottom" constant="35" id="dJ9-CM-ksh"/>
+                <constraint firstItem="BS9-20-cNK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="h5v-yU-QB7"/>
+                <constraint firstItem="QSJ-ij-I1Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="hTb-fH-7SQ"/>
+                <constraint firstAttribute="bottom" secondItem="TNE-bj-8w8" secondAttribute="bottom" id="hZe-Mx-u74"/>
+                <constraint firstAttribute="trailing" secondItem="9PW-bc-hWX" secondAttribute="trailing" constant="8" id="jRT-dy-LYF"/>
+                <constraint firstItem="u6i-Bp-O1r" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" constant="-27" id="n91-C5-MdC"/>
+                <constraint firstItem="TNE-bj-8w8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="okZ-NM-dLj"/>
+                <constraint firstItem="TNE-bj-8w8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qbk-eZ-vP0"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="106" y="356"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alarm_wops.png" width="512" height="512"/>
+        <image name="call_wops.png" width="512" height="512"/>
+        <image name="done_wops.png" width="512" height="512"/>
+        <image name="play_wops.png" width="512" height="512"/>
+    </resources>
+</document>
